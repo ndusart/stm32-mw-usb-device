@@ -1673,7 +1673,7 @@ static void  USBD_CMPSIT_CCIDDesc(USBD_HandleTypeDef *pdev, uint32_t pConf, __IO
   pDesc->bLength = 0x36U;
   pDesc->bDescriptorType = 0x21U;
   pDesc->bcdCCID = 0x0110U;
-  pDesc->bMaxSlotIndex = 0x00U;
+  pDesc->bMaxSlotIndex = 0x01U;
   pDesc->bVoltageSupport = CCID_VOLTAGE_SUPP;
   pDesc->dwProtocols = USBD_CCID_PROTOCOL;
   pDesc->dwDefaultClock = USBD_CCID_DEFAULT_CLOCK_FREQ;
@@ -1685,7 +1685,7 @@ static void  USBD_CMPSIT_CCIDDesc(USBD_HandleTypeDef *pdev, uint32_t pConf, __IO
   pDesc->dwMaxIFSD = USBD_CCID_MAX_INF_FIELD_SIZE;
   pDesc->dwSynchProtocols = 0U;
   pDesc->dwMechanical = 0U;
-  pDesc->dwFeatures = 0x000104BAU;
+  pDesc->dwFeatures = 0x00020040U;
   pDesc->dwMaxCCIDMessageLength = CCID_MAX_BLOCK_SIZE_HEADER;
   pDesc->bClassGetResponse = 0U;
   pDesc->bClassEnvelope = 0U;
